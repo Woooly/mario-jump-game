@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario</title>
+
+<!-- Link para arquivo CSS externo -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <audio id="jump-sound" src="./sounds/jump.mp3" preload="auto"></audio>
+    <audio id="gameover-sound" src="./sounds/gameover.mp3" preload="auto"></audio>
+    <audio id="bgm-sound" src="./sounds/background.mp3" preload="auto" loop></audio>
+    <div class="game-board">
+        <!-- Contador de pulos e highscore -->
+        <div class="scoreboard">
+            <span id="jump-counter">Pulos: 0</span>
+            <span id="highscore">Recorde: 0</span>
+        </div>
+        <img src="./images/clouds.png" class="clouds">
+        <img src="./images/pipe.png" class="pipe">
+        <img src="./images/mario.gif" class="mario">
+        <button id="restart-btn" class="restart-btn" style="display:none;">Jogar Novamente</button>
+    </div>
+
+
+<!-- Link para arquivo JavaScript externo -->
+<script src="./js/script.js" defer></script>
+</body>
+</html>
